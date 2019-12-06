@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:fontFamily="@font/myfont1"
+            android:id="@+id/bydatebtn"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:text="날짜순" />
+
+        <Button
+            android:fontFamily="@font/myfont1"
+            android:id="@+id/orderedlotbtn"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="주문 많이 시킨순" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="144dp"
+    android:gravity="top|center"
+    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</android.support.constraint.ConstraintLayout>

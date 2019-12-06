@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="415dp"
+            android:layout_height="69dp"
+            android:background="#3B240B"
+            >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세 설정"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                android:fontFamily="@font/myfont1"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!-- 이미지 + 메뉴 이름 + 상세 설정 -->
+        <!-- 필요하다 생각되었을 때 다시 수정하면 되니까 우선 이것부터 해보자 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <!-- 메뉴이름 + 체크박스 그룹 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/myfont1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_menuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_menuPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="20dp" />
+
+                <!--세부옵션 추가버튼 -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/myfont1"
+                                android:text="샷" />
+
+                            <Spinner
+                                android:id="@+id/spinner1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                           >
+
+                            <TextView
+
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/myfont1"
+                                android:text="휘핑" />
+
+                            <Spinner
+                                android:id="@+id/spinner2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/myfont1"
+                                android:text="핫(+1)/아이스(-1)" />
+
+                            <Spinner
+                                android:id="@+id/spinner3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:fontFamily="@font/myfont1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                android:text="매장(0)/테이크아웃(+1)" />
+
+                            <Spinner
+                                android:id="@+id/spinner4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/myfont1"
+                                android:text="빨대" />
+
+                            <Spinner
+                                android:id="@+id/spinner5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                           >
+
+                            <TextView
+                                android:fontFamily="@font/myfont1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                android:text="얼음" />
+
+                            <Spinner
+                                android:id="@+id/spinner6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"></Spinner>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- 담기 + 목록 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_margin="8dp">
+
+            <!-- 비율맞출 투명한 버튼 -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="담기"
+                android:fontFamily="@font/myfont1"
+                />
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="목록"
+                android:fontFamily="@font/myfont1"/>
+
+        </LinearLayout>
+
+        <!--추천 목록 출력한다-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="아이템CF (선호도)"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageview_cf"
+                    android:scaleType="fitCenter"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"/>
+
+                <TextView
+                    android:id="@+id/tv_itemCF_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="메뉴이름"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:id="@+id/tv_itemCF_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="메뉴가격"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="날씨/감정 유사도"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageview_we_sim"
+                    android:scaleType="fitCenter"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"/>
+                <TextView
+                    android:id="@+id/tv_we_sim_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="메뉴이름"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:id="@+id/tv_we_sim_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="메뉴가격"
+                    android:fontFamily="@font/myfont1"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+            <!--
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="랜덤"/>
+                            <TextView
+                                android:id="@+id/tv_itemRandom_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="메뉴이름"/>
+                            <TextView
+                                android:id="@+id/tv_itemRandom_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="메뉴가격"/>
+
+                        </LinearLayout>
+            -->
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

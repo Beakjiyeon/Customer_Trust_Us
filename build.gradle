@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+
+        //
+        maven { url 'https://maven.fabric.io/public'
+           }
+
+
+    }
+    /*repositories {
+	    maven {
+	        url "https://jitpack.io"
+	    }
+	}
+	dependencies {
+	    compile 'com.github.ozodrukh:CircularReveal:(latest-release)@aar'
+	}*/
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.google.gms:google-services:4.2.0'
+
+
+        //
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        //
+        maven { url 'https://maven.google.com'  }
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
